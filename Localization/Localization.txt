@@ -1,0 +1,13 @@
+===================================================================
+Localization.java
+
+Objective and usage of class:
+…
+
+Provided tools (methods / functions) of class:
+
+double getXPos()
+double getYPos()
+
+…
+===================================================================
