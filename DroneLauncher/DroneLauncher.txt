@@ -1,0 +1,19 @@
+===================================================================
+ClassName.java
+
+Objective and usage of class:
+
+…
+
+Provided tools (methods / functions) of class:
+…
+
+Implemented classes:
+Timer
+
+…
+Changelog: Kevin 9/29
+===================================================================
+
+
+

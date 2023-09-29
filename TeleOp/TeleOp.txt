@@ -1,0 +1,53 @@
+===================================================================
+TeleOp.java
+
+Objective and usage of class:
+…
+Provided tools (methods / functions) of class:
+
+…
+===================================================================
+
+Pseudocode:
+Localization:
+Odometry
+Send telemetry to control hub
+Controller input
+Drivetrain
+Field Oriented Drive
+Intake
+Button to spin the roller
+Button to move roller
+Outtake
+Button to release the door
+Extension at the start (joystick to lift)
+
+Mosaic: Identify Color of pixel below where you are placing and color of pixel
+Intake two of the stacked pixels
+Go to Backdrop
+Detect April Tag
+Used to align
+Align
+Adjust motor to align and pixels on color sensors to make mosaic/end effect
+Servo to outtake pixel
+Outtake pixel to backdrop with color sensor
+Identify pixel below and/or the color of the pixel being placed
+Out take pixel on top of same colored pixel
+Or on new column to start new mosaic
+
+
+
+35 pixels by making mosaic: 
+Go to stack
+Intake and identify two pixels each time
+Go to backdrop
+Align
+Adjust motor to align and pixels on color sensors to make mosaic/end effect
+Servo to outtake pixel
+Cycle process
+
+Cycle white (If time/pixels are left):
+Intake 2 white pixel
+Go to backdrop
+
+

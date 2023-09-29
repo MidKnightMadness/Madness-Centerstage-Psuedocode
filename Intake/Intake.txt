@@ -1,0 +1,62 @@
+===================================================================
+Autonomous.java
+… 
+Implemented classes:
+Timer
+… 
+===================================================================
+
+
+
+pseudocode - intake
+
+1 motor
+1 servo
+color sensor/ distance (2)
+
+
+
+auto purple pixel
+- the motor doesn't move during mount, but when the camera identifies the correct pos:
+- move and orient robot to corresponding spikes
+
+- slow motor, reverse
+
+
+
+
+roller based:
+
+- the robot follows automatic path as coded, then a color sensor detects an available stack:
+- motor starts
+
+scenario 1: assume the stacks are stacked as they should be:
+- a button press lowers the roller in an increment, or raises
+- simple overall
+
+
+auto:
+- assuming we can’t tell how many pixels are stacked:
+- the intake drives down the stack, then the other sensor commands the motor to cease when two pixels pass through
+  assuming we can tell how many pixels are stacked:
+- the intake just goes down a max of two increments, then ‘stops’
+- motor stops
+
+teleop:
+- the robot’s intake goes down in increments, and hopefully the driver’s at least
+- smart enough to know to stop after two increments
+
+
+scenario 2: the stacks aren’t stacked as they should be; they’re disoriented
+- not complicated, just make sure auto works properly
+
+auto:
+
+- the intake drives down the stack, then the other sensor
+- commands the motor to cease when two pixels pass through
+
+- the robot’s intake goes down in increments, and hopefully the
+- driver’s at least smart enough to know to stop after two increments
+
+teleop:
+- same as scenario 1

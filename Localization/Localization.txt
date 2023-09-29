@@ -8,6 +8,31 @@ Provided tools (methods / functions) of class:
 
 double getXPos()
 double getYPos()
-
+getRotation()
 …
+
+Implemented classes:
+Timer
+Odometry
+
 ===================================================================
+
+
+Localization
+	xPos
+	yPos
+	rotation
+
+	update
+		deltaTime = timer.getDeltaTime()
+
+		xPos += Odometry.deltaX
+
+		YPos += Odometry.deltaY
+
+		rotation += Odometry.rotation
+
+		timer.update()
+
+
+

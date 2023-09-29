@@ -1,0 +1,49 @@
+===================================================================
+Autonomous.java
+
+Comments
+Turn on and set up camera beforehand (init)
+Initialize odometry object (init)
+Determine location of spike mark indicator using camera locations or color sensor to determine where the spike mark line is (init, ~1-2 seconds)
+Go to spike mark (~0.5 seconds)
+Call the motors in reverse intake to put pixel on spike mark indicator
+Continue to use odometry and camera/april tags to get the backdrop (~4 seconds)
+Using lift motor on higher set lines, use end effector servo to drop the pixel(preloaded) before coming back (~1 second)
+Intake the white pixels in the stacks(2 maximum)
+Align with spike mark
+Intake pixel
+Lower intake
+Intake pixel
+Drive back to the board using odometry and camera/april tags (similar to step 6)
+Use lift motor(2) and end effectors servos and end effectors color sensor to position the white pixels on the correct spot, before using the servo to drop the pixel
+Repeat 3-4 cycles (steps 6 to 8)
+Using odometry, park in the backdrop area and turn off all motors (~1 seconds)
+
+Changelog:
+9/27    Matthew
+===================================================================
+
+Autonomous
+	spikeMark
+
+	init() {
+		...
+	}
+
+	init_loop() {
+		spikeMark = camera.readAprilTag()
+
+	}
+
+	start() {
+		goToPos(spikeMark)
+		dropPixel()
+
+		goToPos(BACKDROP_SCORING_LOCATION)
+		scorePixelBackdrop()
+
+
+	}
+
+
+

@@ -1,14 +1,13 @@
 ===================================================================
-ClassName.java
+Localization.java
 
 Objective and usage of class:
 …
 
 Provided tools (methods / functions) of class:
+
 …
 
-Implemented methods:
-
-
-
+Implemented classes:
+Timer
 ===================================================================
